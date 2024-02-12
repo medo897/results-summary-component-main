@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px rgb(0, 0, 0, 0.1);
+}
+
+.first {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 20px;
+    width: 50%;
+    border-radius: 20px;
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+}
+
+h3.question {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    margin-top: -10px;
+}
+
+.score {
+    background: linear-gradient(hsl(241, 81%, 54%), hsla(241, 72%, 46%, 0));
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px auto;
+    border-radius: 50%;
+    color: white;
+    padding: 20px;
+}
+
+.score .your {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.score .total {
+    font-size: 14px;
+    color: hsl(241, 100%, 89%);
+}
+
+.grade {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.phrase {
+    color: hsl(241, 100%, 89%);
+    font-size: 14px;
+    padding: 20px;
+}
+
+.second {
+    width: 50%;
+    padding: 20px;
+    margin: 20px;
+}
+
+.summary {
+    font-weight: bold;
+    justify-content: start;
+    font-size: 18px;
+    color: hsl(224, 30%, 27%);
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+
+.one, .two, .three, .four {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.name_one, .name_two, .name_three, .name_four {
+    display: flex;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.one {
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 100%, 67%, 0.1);
+}
+
+.two {
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.three {
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.four {
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%, 0.1);
+    margin-bottom: 30px;
+}
+
+.first_per {
+    color: hsl(224, 30%, 27%);
+}
+
+.second_per {
+    color: rgba(87, 87, 87, 0.662);
+}
+
+
+button.button {
+    width: 100%;
+    padding: 12px 10px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    outline: none;
+    border-radius: 100vw;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+}
+
+@media (max-width: 650px) {
+    body{
+        align-items: flex-start;
+        overflow: hidden;
+    }
+
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .first{
+        border-radius: 0 0 20px 20px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .phrase {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .second{
+        width: 80%;
+        padding: 0;
+    }
+}
